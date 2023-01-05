@@ -15,6 +15,7 @@ int main() {
 	scanf_s("%d", &N);
 
 	printf("\nEnter a: ");
+	printf("\n\ta: ");
 	scanf_s("%lf", &a);
 
 	for (int i = 1; i <= N; i++)
@@ -24,6 +25,6 @@ int main() {
 	}
 
 	sum += 1;
-	printf("Sum = %lf", sum);
+	printf("\nSum = %lf", sum);
 
 }

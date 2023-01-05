@@ -5,7 +5,7 @@
 
 #define N 3
 
-void find_largest_below_main_diagonal(int matrix[N][N]);
+void findLargest(int matrix[N][N]);
 
 int main() {
 
@@ -20,12 +20,12 @@ int main() {
 		}
 	}
 
-	find_largest_below_main_diagonal(matrix);
+	findLargest(matrix);
 
 	return 0;
 }
 
-void find_largest_below_main_diagonal(int matrix[N][N])
+void findLargest(int matrix[N][N])
 {
 	int largest_value = matrix[0][0];
 	int row = 0, col = 0;
@@ -41,6 +41,6 @@ void find_largest_below_main_diagonal(int matrix[N][N])
 			}
 		}
 	}
-	printf("\nLargest value below main diagonal: %d\n", largest_value);
+	printf("\nLargest value below main diagonal: %d", largest_value);
 	printf("\nIndex of the element: [%d][%d]\n", row, col);
 }
