@@ -17,13 +17,14 @@ int main()
 	int counts[26] = {0};
 
 	int c;
+
 	while ((c = fgetc(text)) != EOF)
 	{
-		if (isalpha(c))
+		if (isalpha(c) && !isdigit(c))
 		{
 			counts[tolower(c) - 'a']++;
 		}
-		else
+		else if (isdigit(c))
 		{
 			printf("Error. File contains non-alphabetic characters");
 			return 0;
@@ -46,6 +47,7 @@ int main()
 	}
 
 	printf("\nThe 8 most common letters are:\n");
+
 	for (int i = 0; i < 8; i++)
 	{
 		printf("\n%c: %d\n", 'a' + i, counts[i]);

@@ -3,16 +3,26 @@
 #include <stdlib.h>
 #include <conio.h>
 
-int main() {
+int main()
+{
 
 	int N = 1;
 
 	double sum = 0, a = 0;
 	int sign = 1;
 
-	printf("\nEnter N (N >= 1):");
-	printf("\n\tN: ");
-	scanf_s("%d", &N);
+	do
+	{
+		printf("\nEnter N (N >= 1):");
+		printf("\n\tN: ");
+		scanf_s("%d", &N);
+
+		if (N < 1)
+		{
+			printf("\nError. N must be >= 1\n");
+		}
+	
+	} while (N < 1);
 
 	printf("\nEnter a: ");
 	printf("\n\ta: ");
@@ -26,5 +36,4 @@ int main() {
 
 	sum += 1;
 	printf("\nSum = %lf", sum);
-
 }

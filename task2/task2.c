@@ -42,5 +42,5 @@ void findLargest(int matrix[N][N])
 		}
 	}
 	printf("\nLargest value below main diagonal: %d", largest_value);
-	printf("\nIndex of the element: [%d][%d]\n", row, col);
+	printf("\nIndex of the element: [%d][%d]\n\n", row, col);
 }
