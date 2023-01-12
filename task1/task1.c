@@ -36,4 +36,6 @@ int main()
 
 	sum += 1;
 	printf("\nSum = %lf", sum);
+
+	return 0;
 }
